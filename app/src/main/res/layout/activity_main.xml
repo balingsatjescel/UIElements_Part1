@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pinkblue"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="254dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <EditText
+        android:id="@+id/emailAdd"
+        android:layout_width="253dp"
+        android:layout_height="47dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="303dp"
+        android:layout_height="45dp"
+        android:max="100"
+        android:min="0"
+        android:progress="0"
+        android:scrollbarSize="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAdd"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <TextView
+        android:id="@+id/ageView"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:text="Age:"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAdd"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:background="#FFEB3B"
+        android:text="Next Page"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:text="With Phone Number "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <EditText
+        android:id="@+id/phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:layout_constraintVertical_bias="0.313" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
